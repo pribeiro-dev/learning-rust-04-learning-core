@@ -1,0 +1,20 @@
+[package]
+name = "learning-core"
+version = "0.1.0"
+edition = "2021"
+description = "Learning Rust #4: Errors, modules, testing."
+license = "MIT"
+repository = "https://github.com/pribeiro-dev/learning-rust-04-learning-core"
+authors = ["Pedro Ribeiro <pedroworibeiro@gmail.com>"]
+rust-version = "1.74.0"
+
+
+[dependencies]
+anyhow = "1"
+thiserror = "1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
+opt-level = 3
