@@ -1,4 +1,3 @@
-
 use anyhow::Result;
 use learning_core::load_config;
 
